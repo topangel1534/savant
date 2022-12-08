@@ -1,0 +1,18 @@
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+
+  > div {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 42px;
+    color: #fff;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
