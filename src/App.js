@@ -1,5 +1,6 @@
 import Header from "./layouts/Header";
 import Specs from "./components/Specs";
+import FeaturedOffering from "./components/FeaturedOffering";
 import Footer from "./layouts/Footer";
 
 import "./App.css";
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <Specs />
+      <FeaturedOffering />
       <Footer />
     </div>
   );
