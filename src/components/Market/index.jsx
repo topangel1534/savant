@@ -7,6 +7,9 @@ const Market = () => {
     <div className="market">
       <div className="market-avatar">
         <img src={Globe} alt="Glove avatar" />
+        {/* <img src={Pin} alt="" />
+        <img src={Pin} alt="" />
+        <img src={Pin} alt="" /> */}
       </div>
       <div className="market-content">
         <div className="market-title">

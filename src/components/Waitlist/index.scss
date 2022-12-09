@@ -26,8 +26,9 @@
     margin-bottom: 365px;
 
     #{$root}-input {
-      width: 92%;
-      padding: 26px 8px 26px 42px;
+      width: 100%;
+      padding: 26px 0;
+      text-indent: 42px;
       border-radius: 20px;
       border: none;
       background: #fff;
@@ -35,7 +36,7 @@
 
     .join-button {
       position: absolute;
-      right: 0;
+      right: 4px;
       top: 4px;
       background: #3671e6;
       border-radius: 20px;

@@ -1,5 +1,6 @@
 import "./index.scss";
 import Featured from "../../assets/images/featured.png";
+import BlueCircle from "../../assets/images/blue-circle.png";
 
 const FeaturedOffering = () => {
   return (
@@ -18,7 +19,21 @@ const FeaturedOffering = () => {
         </div>
       </div>
       <div className="featured-offering-avatar">
-        <img src={Featured} alt="Featured avatar" />
+        <div className="image-group">
+          <img
+            src={Featured}
+            alt="Featured avatar"
+            className="offering-avatar"
+          />
+
+          <img src={BlueCircle} alt="Blue circle" className="blue-circle" />
+        </div>
+        <div className="received-badge">You Received a Dividend!</div>
+        <div className="received-money">+$112.36</div>
+        <div className="progress-bar">
+          <div className="filled-content"></div>
+          <p className="filled-detail">73% Funded</p>
+        </div>
       </div>
     </div>
   );

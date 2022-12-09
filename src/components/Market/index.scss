@@ -1,15 +1,18 @@
 .market {
   $root: &;
   display: flex;
-  padding: 0 176px;
+  align-items: center;
+  // padding: 0 176px;
 
   &-avatar {
-    margin-top: 36px;
-    margin-bottom: 36px;
-    margin-right: 196px;
+    flex: 1;
+    text-align: center;
+    // margin-top: 36px;
+    // margin-bottom: 36px;
   }
 
   &-content {
+    flex: 1;
     margin: 100px 0;
     #{$root}-title {
       font-size: 40px;
@@ -42,6 +45,9 @@
       font-size: 24px;
       font-weight: 700;
       line-height: 34px;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

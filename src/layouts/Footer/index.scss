@@ -1,0 +1,68 @@
+.footer {
+  display: flex;
+  background: #3671e5;
+  padding-right: 100px;
+  .company-name {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0.25em;
+    margin: 120px 280px 108px 146px;
+    color: #fff;
+  }
+
+  .footer-content {
+    color: #fff;
+    margin-top: 102px;
+    display: flex;
+    > div {
+      margin-right: 114px;
+    }
+
+    .column-content {
+      .column-title {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        margin-bottom: 16px;
+      }
+
+      .link-page {
+        margin-bottom: 8px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    .subscribe-container {
+      margin-right: 0;
+      .subscribe-title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        margin-bottom: 24px;
+      }
+
+      .subscribe-form {
+        position: relative;
+        // width: 350px;
+        input {
+          // width: 100%;
+          background: #fff;
+          text-indent: 16px;
+          border: none;
+          padding: 12px 0;
+          font-size: 16px;
+        }
+        img {
+          position: absolute;
+          right: 18px;
+          top: 16px;
+        }
+      }
+    }
+  }
+}

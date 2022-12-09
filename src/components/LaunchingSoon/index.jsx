@@ -6,7 +6,8 @@ const LaunchingSoon = () => {
       <div className="launching-soon-title">Launching Soon!</div>
       <div className="launching-soon-description">
         Join the waitlist to receive updates. Be one of the first to create a
-        free account and instantly access high-yield properties.
+        free
+        <br /> account and instantly access high-yield properties.
       </div>
       <div className="join-waitlist">
         <input

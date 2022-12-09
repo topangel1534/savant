@@ -2,15 +2,18 @@
   $root: &;
   background: rgba(28, 94, 223, 0.15);
   display: flex;
+  align-items: center;
 
   &-description {
-    padding-top: 170px;
-    padding-left: 216px;
+    // flex: 1;
+    // padding-top: 170px;
+    margin-left: 216px;
+
     #{$root}-title {
       width: 374px;
       font-weight: 700;
       font-size: 40px;
-      line-height: 30px;
+      line-height: 36px;
       color: #000;
       letter-spacing: 0.1px;
       margin-bottom: 40px;
@@ -26,11 +29,100 @@
       font-weight: 400;
       line-height: 24px;
       letter-spacing: 0.1px;
-      margin-bottom: 118px;
+      // margin-bottom: 118px;
     }
   }
 
   #{$root}-avatar {
-    margin-bottom: 72px;
+    margin-top: 60px;
+    // flex: 1;
+    position: relative;
+    // margin-bottom: 72px;
+    // .blue-circle {
+    //   height: 450px;
+    //   width: 500px;
+    //   border-radius: 50%;
+    //   background: rgba(54, 113, 229, 0.75);
+    //   position: absolute;
+    //   top: 0px;
+    //   left: 20%;
+    //   z-index: 1;
+    // }
+    .image-group {
+      > img {
+        // position: relative;
+        top: 0;
+        // left: 0;
+        object-fit: contain;
+        text-align: center;
+        width: 100%;
+      }
+
+      .blue-circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 500px;
+        object-fit: contain;
+        z-index: 1;
+      }
+
+      .offering-avatar {
+        position: relative;
+        z-index: 99;
+      }
+    }
+
+    .received-badge {
+      position: absolute;
+      top: 120px;
+      right: 120px;
+      z-index: 100;
+      border-radius: 20px;
+      background: #fff;
+      padding: 13px 16px;
+      color: black;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+    }
+
+    .received-money {
+      position: absolute;
+      top: 80px;
+      right: 160px;
+      z-index: 100;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+    }
+
+    .progress-bar {
+      position: relative;
+      top: -20px;
+      margin: auto;
+      height: 20px;
+      border: 2px solid #3671e5;
+      border-radius: 20px;
+      width: 50%;
+      z-index: 99;
+      background: #fff;
+      margin-bottom: 62px;
+      .filled-content {
+        height: 100%;
+        width: 73%;
+        background: #3671e5;
+        border-radius: 20px;
+      }
+
+      .filled-detail {
+        text-align: right;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
   }
 }
