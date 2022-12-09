@@ -1,0 +1,36 @@
+.team {
+  background: rgba(0, 42, 123, 0.75);
+  padding: 70px 168px;
+  display: flex;
+
+  &-member {
+    flex: 1;
+    background: #fff;
+    padding: 50px 42px;
+    margin-right: 74px;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .summary {
+      height: 70%;
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 64px;
+    }
+
+    .member-info {
+      .name {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+      }
+
+      .role {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.1px;
+      }
+    }
+  }
+}
