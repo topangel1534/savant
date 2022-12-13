@@ -2,5 +2,10 @@
   background: url(../../assets/images/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 42px 106px;
+  background-position: center;
+  // padding: 42px 106px;
+  height: 864px;
+  @media screen and (min-width: 1784px) {
+    height: 1064px;
+  }
 }

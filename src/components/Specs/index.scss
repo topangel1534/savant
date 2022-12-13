@@ -1,11 +1,17 @@
 .specs-container {
   display: flex;
+  justify-content: space-between;
   padding: 68px 183px;
+
+  @media screen and (min-width: 1728px) {
+    padding: 82px 183px;
+  }
 
   .spec-item {
     flex: 1;
     &-header {
       display: flex;
+      justify-content: center;
       align-items: center;
       margin-bottom: 30px;
       .item-icon {
@@ -15,6 +21,10 @@
       .item-title {
         font-weight: 700;
         font-size: 24px;
+        @media screen and (min-width: 1728px) {
+          font-size: 34px;
+          line-height: 44px;
+        }
         line-height: 24px;
         letter-spacing: 0.1px;
         color: #000;
@@ -24,6 +34,10 @@
     .item-description {
       text-align: center;
       font-weight: 500;
+      @media screen and (min-width: 1728px) {
+        font-size: 26px;
+        line-height: 26px;
+      }
       font-size: 20px;
       line-height: 24px;
       letter-spacing: 0.1px;

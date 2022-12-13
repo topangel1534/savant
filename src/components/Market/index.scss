@@ -5,10 +5,30 @@
   // padding: 0 176px;
 
   &-avatar {
+    position: relative;
     flex: 1;
-    text-align: center;
+    // text-align: center;
+    left: 11%;
     // margin-top: 36px;
     // margin-bottom: 36px;
+
+    > .pin {
+      position: absolute;
+      &.first {
+        left: 13%;
+        top: 40%;
+      }
+
+      &.second {
+        left: 22%;
+        top: 36%;
+      }
+
+      &.third {
+        top: 32%;
+        left: 17%;
+      }
+    }
   }
 
   &-content {
@@ -16,17 +36,25 @@
     margin: 100px 0;
     #{$root}-title {
       font-size: 40px;
+      line-height: 36px;
+      @media screen and (min-width: 1728px) {
+        font-size: 46px;
+        line-height: 44px;
+      }
       font-weight: 700;
       letter-spacing: 0.1px;
-      width: 526px;
-      line-height: 36px;
+      // width: 526px;
       margin-bottom: 43px;
     }
 
     #{$root}-description {
-      width: 608px;
+      // width: 608px;
       > p {
         font-size: 20px;
+        @media screen and (min-width: 1728px) {
+          font-size: 26px;
+          line-height: 26px;
+        }
         line-height: 24px;
         letter-spacing: 0.1px;
         margin-bottom: 40px;
@@ -45,6 +73,10 @@
       font-size: 24px;
       font-weight: 700;
       line-height: 34px;
+      @media screen and (min-width: 1728px) {
+        font-size: 28px;
+        line-height: 36px;
+      }
       &:hover {
         cursor: pointer;
       }

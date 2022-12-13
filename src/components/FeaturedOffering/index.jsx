@@ -11,10 +11,14 @@ const FeaturedOffering = () => {
           <br /> Not Your <span>Time</span>.
         </div>
         <div className="featured-offering-content">
-          <p>Savant’s team of experts does all the work for you!</p>
           <p>
-            All you have to do is invest and we'll take care of everything from
-            finding properties to managing tenants and collecting rent checks.
+            Savant’s team of experts does all the work for
+            <br /> you!
+          </p>
+          <p>
+            All you have to do is invest and we'll take care
+            <br /> of everything from finding properties to
+            <br /> managing tenants and collecting rent checks.
           </p>
         </div>
       </div>
