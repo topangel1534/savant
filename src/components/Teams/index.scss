@@ -4,7 +4,9 @@
   display: flex;
 
   &-member {
+    aspect-ratio: 1/1;
     flex: 1;
+
     background: #fff;
     padding: 50px 42px;
     margin-right: 74px;
@@ -13,22 +15,43 @@
     }
 
     .summary {
-      height: 70%;
+      height: 90%;
       font-size: 22px;
+      @media screen and (max-width: 1550px) {
+        font-size: 18px;
+      }
+      @media screen and (min-width: 1728px) {
+        font-size: 26px;
+      }
+      @media screen and (min-width: 1994px) {
+        font-size: 28px;
+      }
+      @media screen and (min-width: 2092px) {
+        font-size: 30px;
+      }
+      @media screen and (min-width: 2188px) {
+        font-size: 32px;
+      }
+
       font-weight: 400;
-      margin-bottom: 64px;
       text-align: center;
     }
 
     .member-info {
       .name {
         font-size: 20px;
+        @media screen and (min-width: 1728px) {
+          font-size: 28px;
+        }
         font-weight: 700;
         letter-spacing: 0.1px;
       }
 
       .role {
         font-size: 14px;
+        @media screen and (min-width: 1728px) {
+          font-size: 20px;
+        }
         font-weight: 400;
         letter-spacing: 0.1px;
       }

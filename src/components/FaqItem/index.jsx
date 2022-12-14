@@ -1,4 +1,5 @@
 import { useState } from "react";
+import cx from "classnames";
 import Arrow from "../../assets/images/arrow.png";
 import "./index.scss";
 const FaqItem = ({ faq }) => {
@@ -9,7 +10,7 @@ const FaqItem = ({ faq }) => {
 
   return (
     <>
-      <div className="faq-item" onClick={handleOpen}>
+      <div className={cx("faq-item", { open: open })} onClick={handleOpen}>
         <div>{faq}</div>
         <img src={Arrow} alt="Arrow" />
       </div>

@@ -3,17 +3,13 @@
   background: rgba(28, 94, 223, 0.15);
   display: flex;
   align-items: center;
-  > div {
-    flex: 1;
-  }
+  padding-left: 12%;
+
   &-description {
     position: relative;
-    left: 12%;
-    // padding-top: 170px;
-    // margin-left: 216px;
-
+    margin-right: 10px;
+    flex: 1;
     #{$root}-title {
-      // width: 374px;
       font-weight: 700;
       font-size: 40px;
       @media screen and (min-width: 1728px) {
@@ -44,19 +40,9 @@
   }
 
   #{$root}-avatar {
-    margin-top: 60px;
+    flex: 2;
+    margin: 60px 0;
     position: relative;
-    // margin-bottom: 72px;
-    // .blue-circle {
-    //   height: 450px;
-    //   width: 500px;
-    //   border-radius: 50%;
-    //   background: rgba(54, 113, 229, 0.75);
-    //   position: absolute;
-    //   top: 0px;
-    //   left: 20%;
-    //   z-index: 1;
-    // }
     .image-group {
       > img {
         // position: relative;
@@ -69,9 +55,9 @@
 
       .blue-circle {
         position: absolute;
-        top: 0;
+        top: 20px;
         left: 0;
-        height: 500px;
+        height: 90%;
         object-fit: contain;
         z-index: 1;
       }
@@ -108,30 +94,30 @@
       letter-spacing: 0.1px;
     }
 
-    .progress-bar {
-      position: relative;
-      top: -20px;
-      margin: auto;
-      height: 20px;
-      border: 2px solid #3671e5;
-      border-radius: 20px;
-      width: 50%;
-      z-index: 99;
-      background: #fff;
-      margin-bottom: 62px;
-      .filled-content {
-        height: 100%;
-        width: 73%;
-        background: #3671e5;
-        border-radius: 20px;
-      }
+    // .progress-bar {
+    //   position: relative;
+    //   top: -20px;
+    //   margin: auto;
+    //   height: 20px;
+    //   border: 2px solid #3671e5;
+    //   border-radius: 20px;
+    //   width: 50%;
+    //   z-index: 99;
+    //   background: #fff;
+    //   margin-bottom: 62px;
+    //   .filled-content {
+    //     height: 100%;
+    //     width: 73%;
+    //     background: #3671e5;
+    //     border-radius: 20px;
+    //   }
 
-      .filled-detail {
-        text-align: right;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-      }
-    }
+    //   .filled-detail {
+    //     text-align: right;
+    //     font-weight: 500;
+    //     font-size: 14px;
+    //     line-height: 16px;
+    //   }
+    // }
   }
 }

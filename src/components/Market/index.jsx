@@ -1,15 +1,11 @@
 import "./index.scss";
-import Globe from "../../assets/images/usa_globe.png";
-import Pin from "../../assets/images/pin.png";
+import Globe from "../../assets/images/pinned.png";
 
 const Market = () => {
   return (
     <div className="market">
       <div className="market-avatar">
         <img src={Globe} alt="Glove avatar" />
-        <img src={Pin} alt="Pin" className="pin first" />
-        <img src={Pin} alt="Pin" className="pin second" />
-        <img src={Pin} alt="Pin" className="pin third" />
       </div>
       <div className="market-content">
         <div className="market-title">

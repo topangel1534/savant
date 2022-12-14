@@ -2,6 +2,8 @@ import "./index.scss";
 import Featured from "../../assets/images/featured.png";
 import BlueCircle from "../../assets/images/blue-circle.png";
 
+import ProgressBar from "../Progressbar";
+
 const FeaturedOffering = () => {
   return (
     <div className="featured-offering">
@@ -34,10 +36,7 @@ const FeaturedOffering = () => {
         </div>
         <div className="received-badge">You Received a Dividend!</div>
         <div className="received-money">+$112.36</div>
-        <div className="progress-bar">
-          <div className="filled-content"></div>
-          <p className="filled-detail">73% Funded</p>
-        </div>
+        <ProgressBar />
       </div>
     </div>
   );
