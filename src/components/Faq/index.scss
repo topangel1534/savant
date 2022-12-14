@@ -1,14 +1,15 @@
 .faq {
   $root: &;
   margin-top: 130px;
-  text-align: center;
+  //text-align: center;
   &-header {
     display: flex;
     flex-direction: column;
-    width: 60%;
-    @media screen and (min-width: 1728px) {
-      width: 40%;
-    }
+    align-items: center;
+    //width: 40%;
+    //@media screen and (min-width: 1728px) {
+    //  width: 40%;
+    //}
     margin: 0 auto;
     .faq-title {
       font-weight: 700;
