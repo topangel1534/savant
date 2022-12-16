@@ -1,6 +1,15 @@
 .wait-list {
   $root: &;
   text-align: center;
+  .mc__alert {
+    margin-bottom: 20px;
+    &-error {
+      color: red;
+    }
+    &-success {
+      color: white;
+    }
+  }
   &-title {
     font-weight: 700;
     font-size: 72px;

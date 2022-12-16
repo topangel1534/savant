@@ -1,5 +1,5 @@
 import Topbar from "../../components/Topbar";
-import Waitlist from "../../components/Waitlist";
+import MailchimpFormContainer from "../../components/MailchimpFormContainer";
 
 import "./index.scss";
 
@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="header">
       <Topbar />
-      <Waitlist />
+      <MailchimpFormContainer />
     </div>
   );
 };
