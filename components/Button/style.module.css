@@ -1,0 +1,97 @@
+.button {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.button a {
+    background: var(--primaryColor);
+    border: 3px solid var(--primaryColor);
+    border-radius: 10px;
+    color: var(--whiteColor);
+    text-decoration: none;
+    padding: 0 24px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 50px;
+    min-width: 190px;
+    text-align: center;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.button a span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.button a:hover {
+    color: var(--primaryColor);
+}
+
+.button a:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.button a span:nth-child(1) {
+    --n: 1;
+}
+
+.button a span:nth-child(2) {
+    --n: 2;
+}
+
+.button a span:nth-child(3) {
+    --n: 3;
+}
+
+.button a span:nth-child(4) {
+    --n: 4;
+}
+
+@media (max-width:1699px) {
+    .button a {
+        font-size: 16px;
+        line-height: 44px;
+    }
+}
+
+@media (max-width:1399px) {
+    .button a {
+        padding: 0 16px;
+        min-width: 180px;
+    }
+}
+
+@media (max-width:1199px) {
+    
+}
+
+@media (max-width:991px) {
+    .button a {
+        font-size: 15px;
+        min-width: 155px;
+    }
+}
+
+@media (max-width:767px) {
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+    .button a {
+        font-size: 15px;
+        line-height: 40px;
+    }
+}

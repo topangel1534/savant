@@ -1,0 +1,182 @@
+/***Common Form***/
+.commonForm {
+  max-width: 553px;
+  border: 1px solid var(--borderColor);
+  border-radius: 10px;
+  margin: auto;
+  background-color: var(--whiteColor);
+  padding: 32px;
+}
+.getStartedForm {
+  background-color: transparent;
+  max-width: 550px;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  margin: 100px 0 0 0;
+}
+.commonForm.w100 {
+  max-width: 100% !important;
+}
+.formHdr {
+  border-bottom: 1px solid var(--greyColor);
+  padding: 0 0 25px 0;
+}
+.formHdr h4 {
+  font-size: 34px;
+  margin: 0;
+  color: var(--secondaryColor);
+}
+.commonForm .formLabel {
+  font-size: 16px;
+  line-height: 2;
+  display: block;
+  margin: 0;
+}
+.commonForm .formControl,
+.commonForm .formSelect {
+  background: var(--greyColor);
+  border: 0;
+  border-radius: 5px;
+  box-shadow: none;
+  font-size: 16px;
+  color: var(--secondaryColor);
+  font-weight: 500;
+  height: 56px;
+  padding: 12px 20px;
+}
+.commonForm .formSelect {
+  background-image: url('../public/assets/selectArrow.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.commonForm .formControl::placeholder,
+.commonForm .formSelect::placeholder {
+  color: var(--textColor);
+}
+.getStartedForm.commonForm .formControl::placeholder {
+  color: var(--secondaryColor);
+  opacity: 0.7;
+}
+.commonForm textarea.formControl {
+  height: 110px;
+}
+.formFtr {
+  padding: 0 30px;
+}
+.formFtr p small {
+  font-size: 11px;
+}
+.formFtr p b {
+  font-weight: normal;
+}
+.mainFrmBtn {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  text-decoration: none;
+  padding: 0 24px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 56px;
+  display: inline-block;
+  border: 0;
+  border-radius: 5px;
+  min-width: 190px;
+  text-align: center;
+}
+.btnSmall.mainFrmBtn {
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 12px 24px;
+}
+.mainFrmBtn:hover {
+  background: var(--primaryColor);
+  color: var(--greyColor);
+}
+.mainFrmBtn.btn-check:focus+.btn-primary,
+.mainFrmBtn.btn-primary:focus {
+  color: var(--whiteColor);
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+  box-shadow: none;
+}
+.mainFrmBtn.btnTrans {
+  background-color: transparent;
+  border: solid 2px var(--primaryColor) !important;
+  color: var(--secondaryColor);
+}
+.mainFrmBtn.btnWhite {
+  background: var(--whiteColor);
+  color: var(--secondaryColor);
+}
+.mainFrmBtn.addBtn {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  padding: 5px 20px;
+}
+.mainFrmBtn.btnWhite del {
+  color: var(--textColor);
+}
+.mainFrmBtn.btnWhite:hover {
+  background: var(--secondaryColor) !important;
+  color: var(--whiteColor);
+}
+.mainFrmBtn.btnWhite.btn-check:focus + .btn-primary,
+.mainFrmBtn.btnWhite.btn-primary:focus {
+  color: var(--whiteColor);
+  background-color: var(--secondaryColor);
+  border-color: var(--secondaryColor);
+  box-shadow: none;
+}
+
+@media (max-width:1699px) {
+  .commonForm .formControl,
+  .commonForm .formSelect {
+    font-size: 16px;
+    height: 50px;
+  }
+  .mainFrmBtn {
+    font-size: 16px;
+    line-height: 50px;
+  }
+  .getStartedForm {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width:1399px) {
+  .getStartedForm {
+    margin-top: 60px;
+    max-width: 480px;
+  }
+  .mainFrmBtn {
+    padding: 0 16px;
+    min-width: 180px;
+  }
+}
+
+@media (max-width:991px) {
+  .mainFrmBtn {
+    font-size: 15px;
+    min-width: 155px;
+  }
+}
+
+@media (max-width:767px) {
+  .getStartedForm {
+    max-width: 320px;
+    margin: 60px auto 0 auto;
+  }
+  .commonForm .formGroup {
+    text-align: center;
+  }
+  .commonForm .formControl,
+  .commonForm .formSelect {
+    font-size: 15px;
+    height: 46px;
+  }
+  .mainFrmBtn {
+    font-size: 15px;
+    line-height: 46px;
+  }
+}

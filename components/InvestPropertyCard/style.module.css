@@ -1,0 +1,171 @@
+.prprtyCard {
+    position: relative;
+    background-color: var(--whiteColor);
+    border-radius: 4px;
+    box-shadow: 0px 0px 20.5109px rgba(12, 38, 90, 0.25);
+    width: 270px;
+}
+.prprtyImgSldr {
+    position: relative;
+}
+.prprtyDividend {
+    position: absolute;
+    background-color: var(--whiteColor);
+    padding: 30px;
+    box-shadow: 0px 50px 30px -20px rgba(12, 38, 90, 0.1);
+    border-radius: 5px;
+    left: -65%;
+    top: 54%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.prprtyDividend h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 24px;
+    color: var(--primaryColor);
+    margin: 0 0 20px 0;
+}
+.prprtyDividend p {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 500;
+    opacity: 0.7;
+    margin: 0;
+    white-space: nowrap;
+}
+.prprtyImg {
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+}
+.prprtyImg img {
+    border-radius: 4px 4px 0 0;
+}
+.prprtyTag {
+    position: absolute;
+    background-color: var(--primaryColor);
+    font-weight: 700;
+    color: var(--whiteColor);
+    font-size: 8.20437px;
+    line-height: 10px;
+    box-shadow: 0px 0px 13.6739px rgba(255, 255, 255, 0.25);
+    border-radius: 3.41849px;
+    min-width: 90px;
+    text-align: center;
+    line-height: 21px;
+    right: 20px;
+    top: 14px;
+    z-index: 2;
+}
+.prprtyTtl {
+    padding: 20px;
+    border-bottom: 1px solid var(--borderColor);
+}
+.prprtyTtl h3 {
+    font-weight: 700;
+    font-size: 21.8783px;
+    line-height: 26px;
+    margin-bottom: 5px;
+}
+.prprtyTtl p {
+    font-weight: 400;
+    font-size: 12.3065px;
+    line-height: 100%;
+    opacity: 0.7;
+    margin: 0;
+}
+.prprtyBtm {
+    padding: 20px;
+}
+.prprtyFeau p {
+    margin: 0;
+}
+.prprtyFeau p span {
+    font-size: 11px;
+    line-height: 15px;
+    opacity: 0.7;
+    display: block;
+}
+.prprtyFeau p strong {
+    font-size: 13.6739px;
+    line-height: 17px;
+    font-weight: 700;
+    opacity: 1;
+}
+.prprtyBtn {
+    margin-top: 20px;
+}
+.prprtyPrgrs {
+    position: relative;
+    background-color: var(--greyColor);
+    height: 16.41px;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+}
+.prprtyPrgrs span {
+    background-color: var(--primaryColor);
+    width: 80%;
+    display: block;
+    height: 16.41px;
+}
+
+@media (max-width:1699px) {
+    .prprtyDividend {
+        padding: 24px;
+    }
+    .prprtyDividend h3 {
+        font-size: 32px;
+        margin: 0 0 16px 0;
+    }
+    .prprtyDividend p {
+        font-size: 18px;
+    }
+    .prprtyTtl h3 {
+        font-size: 20px;
+    }
+    .prprtyPrgrs {
+        height: 12px;
+    }
+    .prprtyPrgrs span {
+        height: 12px;
+    }
+}
+
+@media (max-width:1399px) {
+    .prprtyCard {
+        width: 240px;
+    }
+    .prprtyDividend {
+        padding: 20px;
+    }
+    .prprtyDividend h3 {
+        font-size: 30px;
+        margin: 0 0 12px 0;
+    }
+    .prprtyDividend p {
+        font-size: 16px;
+    }
+    .prprtyTtl {
+        padding: 12px;
+    }
+    .prprtyTtl h3 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .prprtyBtm {
+        padding: 12px;
+    }
+    .prprtyPrgrs {
+        height: 10px;
+    }
+    .prprtyPrgrs span {
+        height: 10px;
+    }
+}
+
+@media (max-width:1199px) {
+    .prprtyDividend h3 {
+        font-size: 24px;
+        margin: 0 0 10px 0;
+    }
+}
