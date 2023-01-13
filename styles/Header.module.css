@@ -1,0 +1,90 @@
+.navBarMain {
+  position: relative;
+  padding: 20px 0px;
+  box-shadow: 0px 4px 30px rgba(59, 91, 153, 0.12);
+  z-index: 2;
+}
+.logo {
+  cursor: pointer;
+}
+.navMenuOutr ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+.navMenuOutr ul li {
+  list-style: none;
+}
+.navMenuOutr > ul > li {
+  margin: 0 .4rem;
+}
+.navMenuOutr li > a {
+  display: inline-block;
+  color: var(--secondaryColor);
+  font-size: 18px;
+  padding: 0.55rem 1.5rem;
+  transition: all 0.3s ease 0s;
+  opacity: 0.7;
+  position: relative;
+  z-index: 2;
+}
+.navMenuOutr li > a:hover {
+  color: var(--primaryColor);
+  opacity: 1;
+}
+.srchBtn,
+.loginBtn {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 28px;
+  height: 25px;
+}
+
+@media (max-width: 1699px) {
+  .navBarMain {
+    padding: 18px 0;
+  }
+  .navMenuOutr li > a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .navBarMain {
+    padding: 15px 0;
+  }
+}
+
+@media (max-width:991px) {
+  .navBarMain {
+    padding: 12px 0px;
+  }
+  .navMenuOutr > ul > li {
+    margin: 0;
+  }
+  .navMenuOutr li > a {
+    padding: 0.55rem 0.8rem;
+  }
+    
+}
+
+@media (max-width:767px) {
+  .navMenuOutr ul {
+    display: block;
+  }
+  .navMenuOutr ul li {
+    text-align: center;
+  }
+  .navMenuOutr li > a {
+    display: block;
+    padding: 1rem;
+  }
+  .srchBtn,
+  .loginBtn {
+    margin-top: 5px;
+  }
+}

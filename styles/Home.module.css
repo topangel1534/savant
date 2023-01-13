@@ -1,0 +1,57 @@
+/* Home Banner */
+.banner {
+  position: relative;
+  background-image: url('../public/assets/mainBanner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  padding: 140px 0 180px 0;
+  overflow: hidden;
+  z-index: 1;
+}
+.banerSlideOuter {
+  max-width: 709px;
+}
+
+@media (max-width:1699px) {
+  .banner {
+    background-size: contain;
+    padding: 100px 0;
+  }
+}
+
+@media (max-width:1399px) {
+  .banner {
+    padding: 75px 0;
+  }
+}
+
+@media (max-width:1199px) {
+  .banner {
+    background-image: url('../public/assets/mainBannerMobile.png');
+    background-size: cover;
+  }
+}
+
+@media (max-width:991px) {
+  .banner {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width:767px) {
+  .banner {
+    text-align: center;
+  }
+  .banner::before {
+    background-color: var(--whiteColor);
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    z-index: -1;
+  }
+}

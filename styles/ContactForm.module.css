@@ -1,0 +1,68 @@
+.cntctPgBlock {
+  position: relative;
+  overflow: hidden;
+  clear: both;
+}
+.commonForm {
+  padding: 40px;
+  background-color: var(--greyColor);
+}
+.commonForm .formGroup {
+  border: 2px solid var(--borderColor);
+  border-radius: 26px;
+}
+.commonForm .formControl::placeholder,
+.commonForm .formSelect::placeholder,
+.commonForm textarea.formControl::placeholder {
+  color: var(--secondaryColor);
+}
+.formBtm {
+  background: var(--whiteColor);
+  border-top: 1px solid var(--borderColor);
+  margin: 0 -40px -40px;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.cntctPattDiv {
+  position: relative;
+}
+.cntctLeftPatt,
+.cntctRightPatt {
+  position: absolute;
+  overflow: hidden;  
+}
+.cntctLeftPatt {
+  left: -440px;
+  top: 80px;
+}
+.cntctRightPatt {
+  right: -460px;
+  top: 100px;
+  z-index: 3;
+}
+
+.cntctContain {
+  position: relative;
+  z-index: 2;
+}
+.cntctLeftDiv {
+  padding: 80px;
+  height: 100%;
+}
+
+.contactForm {
+  text-align: center;
+}
+.contactForm iframe {
+  width: 550px;
+  height: 640px;
+  margin: auto;
+}
+
+.cntctRightOuter {
+  background-image: linear-gradient(180deg, var(--greyColor) 0%, var(--whiteColor) 100%);
+  padding: 80px;
+  position: relative;
+  z-index: 2;
+}

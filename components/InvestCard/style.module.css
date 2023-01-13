@@ -1,0 +1,74 @@
+.investCard {
+    background-color: var(--whiteColor);
+    position: relative;
+    padding: 50px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 50px 30px -20px rgba(12, 38, 90, 0.1);
+    height: 100%;
+}
+.investCard i {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.investCard h3 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.investCard p {
+    margin: 0;
+    opacity: 0.7;
+}
+
+@media (max-width:1699px) {
+    .investCard {
+        padding: 40px 32px;
+    }
+    .investCard i {
+        margin-bottom: 24px;
+    }
+    .investCard i img {
+        width: 60px !important;
+    }
+    .investCard h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width:1399px) {
+    .investCard {
+        padding: 30px;
+    }
+    .investCard i {
+        margin-bottom: 20px;
+    }
+    .investCard i img {
+        width: 50px !important;
+    }
+    .investCard h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width:1199px) {
+    .investCard {
+        padding: 24px;
+    }
+    .investCard h3 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width:991px) {
+    .investCard {
+        padding: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    
+}
