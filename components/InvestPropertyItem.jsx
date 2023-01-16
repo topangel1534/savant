@@ -5,9 +5,17 @@ import { SectionHeading } from './SectionHeading';
 import { InvestPropertyCard } from './InvestPropertyCard';
 import { MainButton } from './Button';
 
-import Img1 from '../public/assets/propertyImg1.png'
-import Img2 from '../public/assets/propertyImg2.png'
-import Img3 from '../public/assets/propertyImg3.png'
+import PelhamImg1 from '../public/assets/Pelham_Img1.jpg'
+import PelhamImg2 from '../public/assets/Pelham_Img2.jpg'
+import PelhamImg3 from '../public/assets/Pelham_Img3.jpg'
+
+import SunRidgeImg1 from '../public/assets/SunRidge_Img1.jpg'
+import SunRidgeImg2 from '../public/assets/SunRidge_Img2.jpg'
+import SunRidgeImg3 from '../public/assets/SunRidge_Img3.jpg'
+
+import PotomacImg1 from '../public/assets/Potomac_Img1.jpg'
+import PotomacImg2 from '../public/assets/Potomac_Img2.jpg'
+import PotomacImg3 from '../public/assets/Potomac_Img3.jpg'
 
 export const InvestPropertyItem = (props) => {
     return (
@@ -31,20 +39,20 @@ export const InvestPropertyItem = (props) => {
                             <div className='investPrprtyList'>
                                 <InvestPropertyCard
                                     dividend="112.36"
-                                    imgSrc1={Img1}
-                                    imgSrc2={Img2}
-                                    imgSrc3={Img3}
-                                    title="Masontry"
-                                    address="Tuscon, AZ"
+                                    imgSrc1={PelhamImg1}
+                                    imgSrc2={PelhamImg2}
+                                    imgSrc3={PelhamImg3}
+                                    title="Pelham"
+                                    address="Westchester, NY"
                                     price="50.00"
                                     share="7,450"
                                     customClass="card1"
                                 />
                                 <InvestPropertyCard
                                     dividend="213.10"
-                                    imgSrc1={Img2}
-                                    imgSrc2={Img3}
-                                    imgSrc3={Img1}
+                                    imgSrc1={SunRidgeImg1}
+                                    imgSrc2={SunRidgeImg2}
+                                    imgSrc3={SunRidgeImg3}
                                     title="Sun Ridge"
                                     address="Tuscon, AZ"
                                     price="11.25"
@@ -54,9 +62,9 @@ export const InvestPropertyItem = (props) => {
                                 />
                                 <InvestPropertyCard
                                     dividend="152.42"
-                                    imgSrc1={Img3}
-                                    imgSrc2={Img1}
-                                    imgSrc3={Img2}
+                                    imgSrc1={PotomacImg1}
+                                    imgSrc2={PotomacImg2}
+                                    imgSrc3={PotomacImg3}
                                     title="Potomac"
                                     address="Bowie, MD"
                                     price="25.00"

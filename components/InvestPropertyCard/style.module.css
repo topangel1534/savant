@@ -15,7 +15,7 @@
     box-shadow: 0px 50px 30px -20px rgba(12, 38, 90, 0.1);
     border-radius: 5px;
     left: -65%;
-    top: 54%;
+    top: 53%;
     transform: translateY(-50%);
     z-index: 2;
 }
@@ -44,10 +44,9 @@
 .prprtyTag {
     position: absolute;
     background-color: var(--primaryColor);
-    font-weight: 700;
+    font-weight: 600;
     color: var(--whiteColor);
-    font-size: 8.20437px;
-    line-height: 10px;
+    font-size: 9px;
     box-shadow: 0px 0px 13.6739px rgba(255, 255, 255, 0.25);
     border-radius: 3.41849px;
     min-width: 90px;

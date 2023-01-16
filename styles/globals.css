@@ -198,6 +198,12 @@ button.btn-menuBar:focus {
   font-weight: normal;
 }
 
+/***Main Banner***/
+.bannerPattDiv .container,
+.bannerPattDiv .container > div > div {
+  position: static;
+}
+
 /***Main Heading***/
 .white.mainHeading h2 {
   color: var(--whiteColor);
@@ -246,7 +252,7 @@ button.btn-menuBar:focus {
 }
 .investPrprtyList .card2 .right {
   left: inherit;
-  right: -38%;
+  right: -54%;
 }
 .investPrprtyList .card3 {
   position: absolute;
@@ -301,6 +307,9 @@ button.btn-menuBar:focus {
   display: none;
 }
 
+.swiper-pagination {
+  bottom: 7px;
+}
 .swiper-pagination-bullet {
   background-color: var(--whiteColor) !important;
   opacity: 1 !important;
@@ -345,7 +354,7 @@ button.btn-menuBar:focus {
   border-color: transparent;
   width: 100%;
   text-align: left;
-  padding: 34px 30px;
+  padding: 38px 30px;
   position: relative;
 }
 .tabContentsOuter .nav.nav-tabs .nav-item button::before {
@@ -378,7 +387,7 @@ button.btn-menuBar:focus {
   overflow: hidden;
 }
 .tabContentInfo {
-  padding: 40px 190px 0px 0px;
+  padding: 40px 70px 0px 0px;
 }
 .tabContentInfo h3 {
   font-size: 24px;
@@ -389,7 +398,7 @@ button.btn-menuBar:focus {
 }
 .tabContentInfo p {
   font-size: 20px;
-  line-height: 22px;
+  line-height: 25px;
   margin: 32px 0 0 0;
   color: var(--whiteColor);
 }
@@ -520,16 +529,19 @@ button.btn-menuBar:focus {
   .investPrprtyList .card2 {
     left: 68%;
   }
+  .investPrprtyList .card2 .right {
+    right: -38%;
+  }
   .tabContentsOuter .nav.nav-tabs .nav-item button {
     font-size: 18px;
-    padding: 30px;
+    padding: 38px 30px;
   }
   .tabContentsOuter .nav.nav-tabs .nav-item button.active {
     font-size: 22px;
   }
   .tabContentInfo {
     padding: 40px 60px 0px 0px;
-}
+  }
   .tabContentInfo p {
     font-size: 18px;
   }

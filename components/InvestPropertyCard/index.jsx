@@ -32,17 +32,17 @@ export const InvestPropertyCard = (props) => {
                 >
                     <SwiperSlide>
                         <div className={`${style.prprtyImg}`}>
-                            <Image src={props.imgSrc1} alt={props.title} />
+                            <Image src={props.imgSrc1} alt={props.title} width={800} height={563} />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={`${style.prprtyImg}`}>
-                            <Image src={props.imgSrc2} alt={props.title} />
+                            <Image src={props.imgSrc2} alt={props.title} width={800} height={563} />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={`${style.prprtyImg}`}>
-                            <Image src={props.imgSrc3} alt={props.title} />
+                            <Image src={props.imgSrc3} alt={props.title} width={800} height={563} />
                         </div>
                     </SwiperSlide>
                 </Swiper>
