@@ -1,11 +1,8 @@
 /***Common Form***/
 .commonForm {
   max-width: 553px;
-  border: 1px solid var(--borderColor);
-  border-radius: 10px;
   margin: auto;
   background-color: var(--whiteColor);
-  padding: 32px;
 }
 .getStartedForm {
   background-color: transparent;
@@ -29,14 +26,16 @@
 }
 .commonForm .formLabel {
   font-size: 16px;
-  line-height: 2;
+  line-height: 19px;
+  color: var(--secondaryColor);
+  font-weight: 500;
   display: block;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 .commonForm .formControl,
 .commonForm .formSelect {
-  background: var(--greyColor);
-  border: 0;
+  background: var(--whiteColor);
+  border: 1px solid rgba(45, 54, 67, 0.2);
   border-radius: 5px;
   box-shadow: none;
   font-size: 16px;
@@ -57,6 +56,11 @@
 .getStartedForm.commonForm .formControl::placeholder {
   color: var(--secondaryColor);
   opacity: 0.7;
+}
+.getStartedForm.commonForm .formControl,
+.getStartedForm.commonForm .formSelect {
+  background: var(--greyColor);
+  border: 0;
 }
 .commonForm textarea.formControl {
   height: 110px;
@@ -83,6 +87,10 @@
   border-radius: 5px;
   min-width: 190px;
   text-align: center;
+}
+.mainFrmBtn.disable {
+  background-color: var(--disableColor);
+  pointer-events: none;
 }
 .btnSmall.mainFrmBtn {
   font-size: 12px;
@@ -129,6 +137,10 @@
   box-shadow: none;
 }
 
+.joinWaitlistForm {
+  
+}
+
 @media (max-width:1699px) {
   .commonForm .formControl,
   .commonForm .formSelect {
@@ -165,10 +177,8 @@
 @media (max-width:767px) {
   .getStartedForm {
     max-width: 320px;
-    margin: 60px auto 0 auto;
-  }
-  .commonForm .formGroup {
     text-align: center;
+    margin: 60px auto 0 auto;
   }
   .commonForm .formControl,
   .commonForm .formSelect {

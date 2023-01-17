@@ -1,8 +1,12 @@
 .navBarMain {
-  position: relative;
+  background-color: var(--whiteColor);
+  position: fixed;
   padding: 20px 0px;
-  box-shadow: 0px 4px 30px rgba(59, 91, 153, 0.12);
-  z-index: 2;
+  box-shadow: 0px 4px 30px rgb(59 91 153 / 12%);
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9;
 }
 .logo {
   cursor: pointer;
