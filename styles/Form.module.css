@@ -40,7 +40,7 @@
   box-shadow: none;
   font-size: 16px;
   color: var(--secondaryColor);
-  font-weight: 500;
+  font-weight: 400;
   height: 56px;
   padding: 12px 20px;
 }
@@ -137,8 +137,21 @@
   box-shadow: none;
 }
 
-.joinWaitlistForm {
-  
+.mainFrmBtn:focus, .mainFrmBtn:hover, .mainFrmBtn:active {
+  background-color: #c1c7d2;
+}
+.mainFrmBtnEmail:disabled {
+  opacity: 1;
+}
+.error {
+  margin-top: 2px;
+  display: block;
+  position: absolute;
+  color: red;
+  font-size: 14px;
+}
+.hide {
+  display: none;
 }
 
 @media (max-width:1699px) {
@@ -175,6 +188,11 @@
 }
 
 @media (max-width:767px) {
+  .error {
+    text-align: center;
+    width: 100%;
+    left: 0;
+  }
   .getStartedForm {
     max-width: 320px;
     text-align: center;
@@ -184,6 +202,7 @@
   .commonForm .formSelect {
     font-size: 15px;
     height: 46px;
+    font-weight: 400;
   }
   .mainFrmBtn {
     font-size: 15px;

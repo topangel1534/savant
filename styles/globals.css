@@ -504,7 +504,11 @@ button.btn-menuBar:focus {
 .newsletterCol form {
   margin: 0 auto;
 }
-
+.disabled {
+  opacity: .6!important;
+  background: #ededed;
+  pointer-events: none;
+}
 
 /***Modal Css Start***/
 .modal {
