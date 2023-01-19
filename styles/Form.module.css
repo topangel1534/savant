@@ -33,7 +33,7 @@
   margin: 0 0 10px 0;
 }
 .commonForm .formControl,
-.commonForm .formSelect {
+.commonForm .formSelect, .mc_inp {
   background: var(--whiteColor);
   border: 1px solid rgba(45, 54, 67, 0.2);
   border-radius: 5px;
@@ -137,7 +137,7 @@
   box-shadow: none;
 }
 
-.mainFrmBtn:focus, .mainFrmBtn:hover, .mainFrmBtn:active {
+.pop_button:active {
   background-color: #c1c7d2;
 }
 .mainFrmBtnEmail:disabled {
@@ -152,6 +152,15 @@
 }
 .hide {
   display: none;
+}
+.warning div {
+  padding-top: 10px;
+  text-align: center;
+}
+.dis {
+  opacity: .6!important;
+  background: #c1c7d2;
+  pointer-events: none;
 }
 
 @media (max-width:1699px) {
