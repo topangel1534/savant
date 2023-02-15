@@ -6,7 +6,6 @@ import YouTube from 'react-youtube';
 
 import Image from 'next/image'
 import Bell from "../../public/assets/thankyouBell.svg";
-import Background from "../../public/assets/thankBack.jpg";
 import style from "./style.module.css"
 
 export const ThankyouContent = (props) => {
