@@ -273,6 +273,12 @@ button.btn-menuBar:focus {
   border-radius: 30px;
 }
 
+/***Thank you page Css Start***/
+.thankBack {
+  background-image: url('../public/assets/thankback.jpg');
+  background-size: cover;
+}
+
 /***Testimonial Css Start***/
 .testimonialBlock {
   position: relative;

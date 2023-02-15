@@ -3,6 +3,7 @@ import { Form, Modal, Button } from 'react-bootstrap';
 import form from '../../styles/Form.module.css'
 import validator from 'validator'
 import MailchimpSubscribe from "react-mailchimp-subscribe"
+import { useRouter } from 'next/router';
 
 export const Newsletter = (props) => {
     const [show, setShow] = useState(false);
@@ -72,8 +73,13 @@ export const Newsletter = (props) => {
 // a basic form
 const MailchimpForm = ({ status, message, onValidated, emailInput2 }) => {
     let email, fname, lname;
+    const router = useRouter();
     
     const [isValidInputs, setisValidInputs] = useState(true);
+
+    if(status == "success") {
+        router.push('/thank-you');
+    }
 
     const submit = () => {
       email &&
@@ -154,11 +160,13 @@ const MailchimpForm = ({ status, message, onValidated, emailInput2 }) => {
             />
             )}
             {status === "success" && (
-            <div
-                style={{ color: "green" }}
-                dangerouslySetInnerHTML={{ __html: message }}
-            />
-            )}
+                <>
+                    <div
+                        style={{ color: "green" }}
+                        dangerouslySetInnerHTML={{ __html: message }}
+                    />
+                </>
+                )}
         </span>
       </div>
     );

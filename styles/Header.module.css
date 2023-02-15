@@ -47,6 +47,10 @@
   width: 28px;
   height: 25px;
 }
+.blankarea {
+  width: 0px;
+  height: 60px;
+}
 
 @media (max-width: 1699px) {
   .navBarMain {

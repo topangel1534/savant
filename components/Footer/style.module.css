@@ -53,6 +53,15 @@
     color: var(--whiteColor);
     opacity: 0.7;
 }
+.white>div {
+    background-color: #fff;
+}
+.white div, .white a {
+    color: #2D3643;
+}
+.white path {
+    fill: #2D3643;
+}
 
 @media (max-width: 1699px) {
     .footrbg {

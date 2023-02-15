@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image'
 import Link from 'next/link';
 import { Container, Row, Col, Offcanvas, Form, Button } from 'react-bootstrap';
@@ -12,6 +12,12 @@ export const Header = (props) => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const [wishlist, setWishlist] = useState(true);
+    
+    useEffect(() => {
+        if(typeof props.wishlist != typeof undefined)
+            setWishlist(props.wishlist);
+    }, [wishlist])
 
     const [searchShow, setSearchShow] = useState("false");
     const searchToggle = () => {
@@ -30,17 +36,7 @@ export const Header = (props) => {
                 </Offcanvas.Header>
                 <Offcanvas.Body className="offcanvasBody">
                     <div className={`${header.navMenuOutr}`}>
-                        <ul>
-                            <li className={`${props.homeActive}`}>
-                                <Link href="/">Invest</Link>
-                            </li>
-                            <li className={`${props.faqActive}`}>
-                                <Link href="/">FAQs</Link>
-                            </li>
-                            <li className={`${props.aboutActive}`}>
-                                <Link href="/">About</Link>
-                            </li>
-                        </ul>       
+                         
                     </div>
                     <div className='d-flex align-items-center justify-content-center gap-4 my-3'>
                         <span className={`${header.loginBtn}`}>
@@ -49,11 +45,14 @@ export const Header = (props) => {
                             </Link>
                         </span>
                     </div>
-                    <MainButton
-                        title="Join the Waitlist"
-                        btnURL="#newsletter"
-                        customclassName="btnSmall"
-                    />
+                    {
+                        wishlist == true ?
+                        <MainButton
+                            title="Join the Waitlist"
+                            btnURL="#newsletter"
+                            customclassName="btnSmall"
+                        />
+                    :<></>}
                 </Offcanvas.Body>
             </Offcanvas>
             
@@ -70,17 +69,7 @@ export const Header = (props) => {
                         <Col>
                             <div className='d-none d-md-block'>
                                 <div className={`${header.navMenuOutr}`}>
-                                    <ul>
-                                        <li className={`${props.homeActive}`}>
-                                            <Link href="/">Invest</Link>
-                                        </li>
-                                        <li className={`${props.faqActive}`}>
-                                            <Link href="/">FAQs</Link>
-                                        </li>
-                                        <li className={`${props.aboutActive}`}>
-                                            <Link href="/">About</Link>
-                                        </li>
-                                    </ul>       
+                                    
                                 </div>
                             </div>
                         </Col>
@@ -101,11 +90,14 @@ export const Header = (props) => {
                                         <Image src={loginIcon} alt="Login" width={28} height={28} />
                                     </a>
                                 </span>
-                                <MainButton
-                                    title="Join the Waitlist"
-                                    btnURL="#newsletter"
-                                    customClass="btnRadius"
-                                />
+                                {
+                                    wishlist ?
+                                        <MainButton
+                                            title="Join the Waitlist"
+                                            btnURL="#newsletter"
+                                            customClass="btnRadius"
+                                        />
+                                :<><div className={header.blankarea}></div></>}
                             </div>
                             <div className="d-flex d-md-none align-items-center justify-content-end gap-3">
                                 <span className={`${header.srchBtn}`}>

@@ -1,13 +1,23 @@
 import Image from 'next/image'
+import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link'
 import { Container, Row, Col, Accordion } from 'react-bootstrap';
 import style from './style.module.css'
 import logo from '../../public/assets/ftrLogo.svg'
+import logoDark from '../../public/assets/logo.svg'
 
 export const Footer = (props) => {
+
+    const [theme, setTheme] = useState('default');
+
+    useEffect(() => {
+        if(typeof props.theme != typeof undefined)
+            setTheme(props.theme);
+    }, [theme])
+
     return (
         <>
-            <section className={style.footrBlock}>
+            <section className={`${style.footrBlock} ${theme == 'white' ? style.white : ''}`}>
                 <div className={style.footrbg}>
                     <Container>
                         <Row className='g-4 g-lg-5 d-flex align-items-top justify-content-between '>
@@ -15,7 +25,11 @@ export const Footer = (props) => {
                                 <div className={style.ftrLogo}>
                                     <div className={style.logo}>
                                         <Link href="/" className={`${style.logo}`} passHref>
-                                            <Image src={logo} alt="logo" width={195} height={45} />
+                                            {theme == 'white' ? 
+                                                <Image src={logoDark} alt="logo" width={195} height={45} />
+                                            : 
+                                                <Image src={logo} alt="logo" width={195} height={45} />
+                                            }
                                         </Link>
                                     </div>
                                 </div>
