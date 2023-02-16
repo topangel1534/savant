@@ -25,6 +25,14 @@ function MyApp({ Component, pageProps }) {
       `,
       }}
     />
+    <Script
+      dangerouslySetInnerHTML={{
+        __html: `
+          gtag('event', 'conversion', {'send_to': 'AW-11072346824/AjrbCMm8qowYEMi12p8p'});
+        `,
+        }}
+    >
+    </Script>
     <Component {...pageProps} />
   </>
 }
