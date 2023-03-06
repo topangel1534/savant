@@ -24,15 +24,28 @@ export const InvestPropertyItem = (props) => {
                 <Container>
                     <Row className='g-4 align-items-center'>
                         <Col lg={5}>
-                            <SectionHeading
-                                title={<><span>Invest Your Money,</span> Not Your Time.</>}
-                                description={<>Savant&apos;s team of experts does all the work for you!<br/>
-                                All you have to do is invest and we&apos;ll take care of everything from finding properties to managing tenants and collecting rent checks.</>}
+                            <div className='desktop'>
+                                <SectionHeading
+                                    title={<><span>Invest Your Money,</span> Not Your Time.</>}
+                                    description={<>Savant&apos;s team of experts does all the work for you!<br/>
+                                    All you have to do is invest and we&apos;ll take care of everything from finding properties to managing tenants and collecting rent checks.</>}
+                                />
+                            </div>
+                            <div className='mobile'>
+                                <SectionHeading
+                                    title={<><span>Invest Your Money,</span> Not Your Time.</>}
+                                    description={<>Take the hassle out of investing with Savant! Our team of experts does all the heavy lifting - from finding properties to  collecting rent checks - so you can focus on making money without all the stress.</>}
+                                />
+                            </div>
+                            <MainButton
+                                title="Learn More About Savant"
+                                btnURL="#newsletter"
+                                customClass="btnRadius widthAuto mobile force learnmore"
                             />
                             <MainButton
                                 title="Join the Waitlist"
                                 btnURL="#newsletter"
-                                customClass="btnRadius widthAuto"
+                                customClass="btnRadius widthAuto desktop force"
                             />
                         </Col>
                         <Col lg={7}>
@@ -46,6 +59,7 @@ export const InvestPropertyItem = (props) => {
                                     address="Westchester, NY"
                                     price="50.00"
                                     share="7,450"
+                                    inner_class="card_1"
                                     customClass="card1"
                                 />
                                 <InvestPropertyCard
@@ -58,6 +72,7 @@ export const InvestPropertyItem = (props) => {
                                     price="11.25"
                                     share="7,450"
                                     customClass="card2"
+                                    inner_class="card_2"
                                     dividendPosition="right"
                                 />
                                 <InvestPropertyCard
@@ -69,6 +84,7 @@ export const InvestPropertyItem = (props) => {
                                     address="Bowie, MD"
                                     price="25.00"
                                     share="3,218"
+                                    inner_class="card_3"
                                     customClass="card3"
                                 />
                             </div>

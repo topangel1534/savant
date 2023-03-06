@@ -13,7 +13,12 @@ export const NewsletterItem = (props) => {
                         <SectionHeading
                             title="Launching Soon!"
                             description="Join the waitlist to receive updates. Be one of the first to create a free account and instantly access high-yield properties."
-                            customClass="text-center white"
+                            customClass="text-center white desktop"
+                        />
+                        <SectionHeading
+                            title="Launching Soon!"
+                            description={<>Join the waitlist by <strong>April 3</strong> to be apart of the <strong>Alpha Launch</strong>. Spots are limited!</>}
+                            customClass="text-center white mobile"
                         />
                         <Newsletter />
                     </div>

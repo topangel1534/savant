@@ -111,6 +111,76 @@
   left: -69px;
 }
 
+/* Mobile Design */
+.banner_text h2 {
+  font-size: 32px;
+  line-height: 60px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 10px!important;
+  margin-top: 1px;
+}
+.banner_text h2 span {
+  font-size: 56px;
+  line-height: 60px;
+  font-weight: 800;
+  display: block;
+  letter-spacing: 0px;
+}
+.banner_text p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.joinlist {
+  width: 200px!important;
+  margin-top: 135px!important;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%!important;
+  transform: translateX(-50%);
+  padding: 0px 14px 14px 14px!important;
+  box-shadow: 0 0px 50px rgb(0 0 0 / 16%), 0 6px 26px rgb(0 0 0 / 0%);
+  z-index: 0;
+}
+.joinlist p {
+  font-size: 12px!important;
+  line-height: 14px!important;
+}
+.joinlist img {
+  max-width: 158px;
+  float: left;
+}
+.divident, .passive {
+  bottom: -190px;
+  top: auto!important;
+  left: 18px!important;
+  padding: 9px!important;
+  max-width: 182px;
+}
+.divident h3 {
+  font-size: 19.5px!important;
+  text-align: left!important;
+  margin-bottom: 0px!important;
+}
+.divident p {
+  text-align: left!important;
+  font-size: 13.25px!important;
+}
+.passive {
+  bottom: -340px!important;
+  border-radius: 5px!important;
+  max-width: 160px;
+  left: 25%!important;
+  text-align: left;
+}
+.passive p {
+  font-size: 12px!important;
+  line-height: 14px!important;
+}
+.passive:before {
+  opacity: 0;
+}
+
 @media (max-width:1699px) {
   .bnrRghtOuter {
     width: 734px;
@@ -239,30 +309,75 @@
 
 @media (max-width:991px) {
   .banner {
-    background-image: url('../public/assets/mainBannerMobile.png');
+    background: rgba(0, 0, 0, 0.25);
+    background: linear-gradient(0deg, #D1DEF8 0%, rgba(255,255,255,0) 100%);
+  }
+  .dots {
+    background-image: url('../public/assets/plain-concrete-structure-city.png');
+    background-position: right bottom;
     background-size: cover;
+    padding-bottom: 410px;
+    z-index: -5;
+  }
+  .banner:after {
+    content: '';
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    background-repeat: no-repeat;
+    left: 0;
+    bottom: 0;
+    background-image: url('../public/assets/lines.svg');
+    background-size: 450px 100%;
+    background-position: 0px -20px;
+    padding-bottom: 400px;
+    z-index: -2;
+  }
+  .banner form {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 2%), 0 6px 6px rgb(0 0 0 / 2%);
+  }
+  .banner form input {
+    height: 56px!important;
+    font-size: 16px!important;
+    margin-bottom: -5px;
+    background-color: #fff!important;
+    box-shadow: 0px 0px 1px 1px #E6E6E6!important;
+  }
+  .banner form button {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px 25px;
+    box-shadow: 0px 0px 1px 1px #0d6efd!important;
   }
   .banerSlideOuter {
-    padding: 60px 0;
+    padding: 34px 0;
   }
   .bnrRghtOuter {
     display: none;
+  }
+  .bnrRghtTextScnd::before {
+    background-image: url('../public/assets/cardArrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    width: 47px;
+    height: 43px;
+    left: 50%;
+    top: -18px;
+    transform: translateX(-50%) rotate(90deg);
   }
 }
 
 @media (max-width:767px) {
   .banner {
     text-align: center;
-  }
-  .banner::before {
-    background-color: var(--whiteColor);
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.5;
-    z-index: -1;
   }
 }

@@ -5,6 +5,7 @@ import { Container, Row, Col, Offcanvas, Form, Button } from 'react-bootstrap';
 import header from '../styles/Header.module.css'
 import { MainButton } from '../components/Button';
 import logo from '../public/assets/logo.svg'
+import logoWhite from '../public/assets/ftrLogo.svg'
 import searchIcon from '../public/assets/searchIcon.svg'
 import loginIcon from '../public/assets/loginIcon.svg'
 
@@ -26,32 +27,37 @@ export const Header = (props) => {
     
     return (
         <>
-            <Offcanvas show={show} onHide={handleClose} className="offcanvasOuter">
+            <Offcanvas show={show} onHide={handleClose} className="offcanvasOuter" placement="top">
                 <Offcanvas.Header closeButton className="offcanvasHeader">
                 <div className="offcanvasLogo">
                     <Link href="/" passHref>
-                        <Image src={logo} alt="logo" width={189} height={42}/>
+                        <Image src={logoWhite} alt="logo" width={189} height={42}/>
                     </Link> 
                 </div>
                 </Offcanvas.Header>
                 <Offcanvas.Body className="offcanvasBody">
                     <div className={`${header.navMenuOutr}`}>
-                         
+                        <ul>
+                            <li className={`${props.homeActive}`}>
+                                <Link href="https://savant.business">Home</Link>
+                            </li>
+                            <li className={`${props.faqActive}`}>
+                                <Link href="https://invest.savant.business/faq">FAQs</Link>
+                            </li>
+                            <li className={`${props.aboutActive}`}>
+                                <Link href="https://invest.savant.business/about">About</Link>
+                            </li>
+                        </ul>       
                     </div>
-                    <div className='d-flex align-items-center justify-content-center gap-4 my-3'>
-                        <span className={`${header.loginBtn}`}>
-                            <Link href="/" passHref>
-                                <Image src={loginIcon} alt="Login" width={28} height={28} />
-                            </Link>
-                        </span>
-                    </div>
-                    {
+                        {
                         wishlist == true ?
-                        <MainButton
-                            title="Join the Waitlist"
-                            btnURL="#newsletter"
-                            customclassName="btnSmall"
-                        />
+                        <div className='canvas_btn'>
+                            <MainButton
+                                title="Join the Waitlist"
+                                btnURL="#newsletter"
+                                className="btnSmall"
+                            />
+                        </div>
                     :<></>}
                 </Offcanvas.Body>
             </Offcanvas>
@@ -69,7 +75,17 @@ export const Header = (props) => {
                         <Col>
                             <div className='d-none d-md-block'>
                                 <div className={`${header.navMenuOutr}`}>
-                                    
+                                    <ul>
+                                        <li className={`${props.homeActive}`}>
+                                            <Link href="https://savant.business">Home</Link>
+                                        </li>
+                                        <li className={`${props.faqActive}`}>
+                                            <Link href="https://invest.savant.business/faq">FAQs</Link>
+                                        </li>
+                                        <li className={`${props.aboutActive}`}>
+                                            <Link href="https://invest.savant.business/about">About</Link>
+                                        </li>
+                                    </ul>       
                                 </div>
                             </div>
                         </Col>

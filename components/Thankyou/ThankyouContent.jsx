@@ -9,7 +9,7 @@ import Bell from "../../public/assets/thankyouBell.svg";
 import style from "./style.module.css"
 
 export const ThankyouContent = (props) => {
-    const videoId = 'rCvr9f8p0iQ';
+    const videoId = 'o4icQVVIuKw';
     const opts = {
         height: '526',
         playerVars: {

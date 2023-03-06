@@ -72,5 +72,29 @@
 @media (max-width:767px) {
     .testiInfo {
         min-height: auto;
+        margin: 5px 0;
+    }
+    .testiInfo p {
+        line-height:28px;
+        font-size: 18px;
+        display: -webkit-box;
+        -webkit-line-clamp: 9;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .testiIcon svg {
+        width: 60px;
+    }
+    .testiTtl {
+        min-height: 51px;
+        position: absolute;
+        bottom: 22px;
+    }
+    .testiTtl h4 {
+        color: #1A56CB;
+    }
+    .testiTtl p {
+        opacity: 1;
+        color: #789FED;
     }
 }

@@ -10,6 +10,7 @@ import { Header } from '../components/Navigation';
 import { HomeBanner } from '../components/HomeBanner';
 import { InvestItem } from '../components/InvestItem';
 import { InvestPropertyItem } from '../components/InvestPropertyItem';
+import { Offering } from '../components/Offering';
 import { InvestMarketsItem } from '../components/InvestMarketsItem';
 import { TestimonialItem } from '../components/TestimonialItem';
 import { FaqItem } from '../components/FaqItem';
@@ -33,6 +34,8 @@ export default function Home() {
       <InvestItem />
 
       <InvestPropertyItem /> 
+
+      <Offering /> 
 
       <InvestMarketsItem />
       

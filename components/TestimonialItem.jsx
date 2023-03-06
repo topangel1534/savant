@@ -19,17 +19,18 @@ export const TestimonialItem = (props) => {
                         modules={[Pagination, Scrollbar, A11y, Autoplay]}
                         spaceBetween={32}
                         slidesPerView={3}
-                        centeredSlides={false}
-                        loop={false}
+                        centeredSlides={true}
+                        loop={true}
+                        pagination={true}
                         autoplay={true}
                         breakpoints={{
                             320: {
-                                slidesPerView: 1,
-                                spaceBetween: 32,
+                                slidesPerView: 1.2,
+                                spaceBetween: 14,
                             },
                             768: {
                                 slidesPerView: 1,
-                                spaceBetween: 32,
+                                spaceBetween: 14,
                             },
                             992: {
                                 slidesPerView: 2,

@@ -5,6 +5,7 @@ export const SectionHeading = (props) => {
         <div className={`mainHeading ${style.mainHeading} ${props.customClass}`}>        
            <h2>{props.title}</h2>
            <p>{props.description}</p>
+           {(props.checkList)?<>{props.checkList}</>:""}
         </div>
     )
 }

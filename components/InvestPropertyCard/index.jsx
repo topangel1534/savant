@@ -12,7 +12,7 @@ import { MainButton } from '../Button';
 
 export const InvestPropertyCard = (props) => {
     return ( 
-        <div className={`${style.prprtyCard} ${props.customClass}`}>
+        <div className={`${style.prprtyCard} ${props.customClass} ${(props.inner_class == "card_1"?style.card1:"")} ${(props.inner_class == "card_2"?style.card2:"")} ${(props.inner_class == "card_3"?style.card3:"")}`}>
             <div className={`${style.prprtyImgSldr}`}>
                 <div className={`${style.prprtyDividend} ${props.dividendPosition}`}>
                     <h3>+${props.dividend}</h3>
@@ -32,17 +32,17 @@ export const InvestPropertyCard = (props) => {
                 >
                     <SwiperSlide>
                         <div className={`${style.prprtyImg}`}>
-                            <Image src={props.imgSrc1} alt={props.title} width={800} height={563} />
+                            <Image src={props.imgSrc1} alt={props.title} />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={`${style.prprtyImg}`}>
-                            <Image src={props.imgSrc2} alt={props.title} width={800} height={563} />
+                            <Image src={props.imgSrc2} alt={props.title} />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={`${style.prprtyImg}`}>
-                            <Image src={props.imgSrc3} alt={props.title} width={800} height={563} />
+                            <Image src={props.imgSrc3} alt={props.title} />
                         </div>
                     </SwiperSlide>
                 </Swiper>

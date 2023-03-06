@@ -90,9 +90,18 @@
   .navMenuOutr li > a {
     display: block;
     padding: 1rem;
+    font-size: 28px;
+    line-height: 40px;
+    color: #fff;
   }
   .srchBtn,
   .loginBtn {
     margin-top: 5px;
+  }
+  .srchBtn {
+    display: none;
+  }
+  .logo img {
+    max-width: 140px;
   }
 }

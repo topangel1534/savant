@@ -89,16 +89,42 @@
     .footrbg {
         padding: 70px 0;
     }
+    .logo a {
+        width: auto;
+    }
     .logo {
         text-align: center;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 13px;
     }
 }
 
 @media (max-width: 767px) {
+    .logo {
+        text-align: center;
+        float: none;
+    }
     .footrbg {
-        padding: 50px 0;
+        padding: 38px 0 15px;
     }
     .ftrSocial {
-        margin-top: 20px;
+        margin-top: 30px;
+        border-top: 1px solid #cbcbcb36;
+        padding-top: 30px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .ftrSocial span + span {
+        margin-left: 20px;
+    }
+    .ftrSocial a {
+        margin: 0 12px;
+    }
+    .ftrSocial a svg {
+        transform: scale(1.2);
+    }
+    .ftrSocial a svg path {
+        fill: #8CB0F8;
     }
 }

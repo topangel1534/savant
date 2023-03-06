@@ -10,7 +10,7 @@ import { FaqMobile } from './FaqMobile';
 export const FaqItem = (props) => {
     return (
         <>
-            <section className='faqBlock sectionPadding'>
+            <section className='faqBlock sectionPadding' id="FAQ">
                 <Container>
                     <SectionHeading
                        title="FAQ"

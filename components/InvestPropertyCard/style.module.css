@@ -40,6 +40,8 @@
 }
 .prprtyImg img {
     border-radius: 4px 4px 0 0;
+    width: 100%;
+    height: 100%;
 }
 .prprtyTag {
     position: absolute;
@@ -166,5 +168,105 @@
     .prprtyDividend h3 {
         font-size: 24px;
         margin: 0 0 10px 0;
+    }
+}
+
+@media (max-width:768px) {
+    .card1.prprtyCard, .card2.prprtyCard {
+        width: 125px;
+    }
+    .card1 .prprtyDividend, .card2 .prprtyDividend {
+        left: 48px;
+        top: 51px;
+        padding: 9px 14px;
+    }
+    .card1 .prprtyDividend h3, .card2 .prprtyDividend h3 {
+        margin-bottom: 0px;
+        font-size: 18.29px;
+    }
+    .card1 .prprtyDividend p, .card2 .prprtyDividend p {
+        font-size: 10.06px;
+        color: #2D3643;
+        display: block;
+        margin-top: -6px;
+    }
+    .card1 .prprtyTag, .card2 .prprtyTag {
+        font-size: 3.75px;
+        top: 7px;
+        right: 10px;
+        min-width: 44px;
+        line-height: 10px;
+        border-radius: 1.56px
+    }
+    .card1 .prprtyTtl, .card2 .prprtyTtl {
+        padding: 5px 8px;
+        font-size: 10px;
+    }
+    .card1 .prprtyTtl h3, .card2 .prprtyTtl h3 {
+        margin-bottom: 2px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .card1 .prprtyTtl p, .card2 .prprtyTtl p {
+        font-size: 5.63px;
+        margin-top: -4px;
+        display: block;
+    }
+    .card1 .prprtyBtm, .card2 .prprtyBtm {
+        padding: 8px 10px 6px 10px;
+    }
+    .card1 .prprtyFeau p span, .card2 .prprtyFeau p span {
+        font-size: 5px;
+    }
+    .card1 .prprtyFeau p strong, .card2 .prprtyFeau p strong {
+        font-size: 6.25px;
+        margin-top: -5px!important;
+        display: block;
+    }
+    .card1 .prprtyBtn, .card2 .prprtyBtn {
+        margin-top: 3px;
+    }
+    .card1 .prprtyBtn a, .card2 .prprtyBtn a {
+        font-size: 5.63px!important;
+        line-height: 14px !important;
+        border-radius: 1.56px!important;
+    }
+    .card1 .prprtyPrgrs, .card2 .prprtyPrgrs {
+        height: 8px;
+    }
+
+    /* Card 2 */
+    .card2 {
+        top: 94px!important;
+        right: 0;
+        left: unset!important;
+    }
+    .card2 .prprtyDividend {
+        left: -60px!important;
+        top: 52px;
+        max-width: 150px;
+    }
+
+    /* Card 3 */
+    .card3 {
+        top: 304px!important;
+        left: 50%!important;
+        transform: translate(-50%)!important;
+        max-width: 275px;
+        width: 100%;
+    }
+    .card3 .prprtyDividend {
+        left: -18px;
+        top: 108px;
+    }
+    .card3 .prprtyTtl {
+        padding: 22px 23px 20px;
+    }
+    .card3 .prprtyTtl h3 {
+        font-size: 22.06px;
+        margin-bottom: 10px;
+    }
+    .card3 .prprtyBtm {
+        opacity: 0;
     }
 }

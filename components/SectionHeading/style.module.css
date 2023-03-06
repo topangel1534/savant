@@ -6,7 +6,7 @@
     color: var(--secondaryColor);
     line-height: 88px;
     font-weight: 700;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
 }
 .mainHeading h2 span {
     color: var(--primaryColor);
@@ -18,6 +18,29 @@
 }
 .mainHeading p span {
     color: var(--primaryColor);
+}
+.mainHeading ul {
+    margin-top: 35px;
+    text-align: left;
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainHeading ul li {
+    font-size: 14px;
+    line-height: 24px;
+    color: #1A1A1A;
+    font-weight: 500;
+    margin-bottom: 8px;
+    position: relative;
+}
+.mainHeading ul li:before {
+    content: '';
+    background-image: url('./../../public/assets/check.svg');
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -32px;
 }
 
 @media (max-width:1699px) {
@@ -46,13 +69,14 @@
         margin-bottom: 40px;
     }
     .mainHeading h2 {
-        font-size: 36px;
-        line-height: 42px;
+        font-size: 32px;
+        line-height: 44px;
     }
 }
 
 @media (max-width:767px) {
     .mainHeading p {
         max-width: 100%;
+        line-height: 24px;
     }
 }
